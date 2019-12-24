@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Агропитер</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<meta name="robots" content="noindex, nofollow"/> <!-- скрыть от индексации -->
+</head>
+<body>
+	<div class="container-wrap">
+		<div class="hdr-back">
+			<div class="container">
+				<div class="hdr">
+					<div class="hdr__company">
+						<span>ООО "Горизонт"</span>
+					</div>
+					<div class="hdr__email">
+						<span>+7 (812) 591-87-00</span>
+					</div>
+					<div class="hdr__phone">
+						<a href="tel:+79118494975"><span>+7 (911) 849-49-75</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="container-wrap block-one"><!-- блок 1 - УТП -->
+		<div class="container">
+			<div class="block-utp">
+				<div class="block-utp__h1">
+					<h1 class="h1 h1__utp">Аренда земли от собственника!</h1>
+				</div>
+				<div class="block-utp__advantage">
+					<ul>
+						<li>Цена от 500 р/га</li>
+						<li>Общая площадь более 1 000 га</li>
+						<li>Новые дороги</li>
+						<li>БЕЗ посредников и переплаты!</li>
+						<li>Оформление договора 1 день!</li>
+					</ul>
+					<div class="block-utp__form">
+						<div class="utp-form__content">
+							<div class="hdr-form">
+								<h2 class="h2">Заполните форму</h2>
+							</div>
+							<form id="utpForm">
+								<input type="text" name="user_name" placeholder="Иванов Иван Иванович" pattern="[^0-9]{3,}" required>
+								<input type="tel" name="user_phone" placeholder="+79990000000" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" required>
+								<input class="btn" type="submit" value="Получить консультацию!">
+							</form>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- END блок 1 - УТП -->
+	<section class="container"><!-- Блок 2 - таймер -->
+		<div class="block block-two">
+			<div class="block-two__txt"><!-- заголовки  -->
+				<h2 class="h2">Успей забронировать участок по выгодной цене!</h2>
+				<span>До конца акции остается:</span>
+			</div><!--END заголовки  -->
+			<div class="block-two__time"><!-- время  -->
+				<div class="time__wrap">
+					<div class="time__days">
+						<span>15</span>
+					</div>
+					<p>Дней</p>
+				</div>
+				<p class="dots-timer">:</p>
+				<div class="time__wrap">
+					<div class="time__hours">
+						<span>20</span>
+					</div>
+					<p>Часов</p>
+				</div>
+				<p class="dots-timer">:</p>
+				<div class="time__wrap">
+					<div class="time__min">
+						<span>17</span>
+					</div>
+					<p>Минут</p>
+				</div>
+				<p class="dots-timer">:</p>
+				<div class="time__wrap">
+					<div class="time__sec">
+						<span>06</span>
+					</div>
+					<p>Секунд</p>
+				</div>
+			</div><!--END время  -->
+			<form class="form" id='timerForm'>
+				<input type="text" name="user_phone" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" placeholder="+79990000000" required>
+				<input type="text" name="user_name" pattern="[^0-9]{3,}" placeholder="Иванов Иван Иванович" required>
+				<input class="btn" type="submit" value="Забронировать!">
+			</form>
+		</div>
+	</section><!--END Блок 2 - таймер -->
+	<section class="container"><!-- выбрать участок -->
+		<div class="block select-area">
+			<h2 class="h2">Выбрать участок:</h2>
+
+			<div class="area">
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img1.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>114,8259 га</span>
+						<p>Вальтеровский ручей</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img2.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>84,0505 га</span>
+						<p>Вальтеровский ручей 2</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img3.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>255,7125 га</span>
+						<p>Большое Троицкое</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img4.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>61,4183 га</span>
+						<p>Малое Троицкое</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img5.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>148,58 га</span>
+						<p>Подолье</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img6.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>4,54 га</span>
+						<p>Подолье 2</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img7.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>21,4715 га</span>
+						<p>Мучихино</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img8.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>59,0755 га</span>
+						<p>Мучихино 2</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img9.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>5,0476 га</span>
+						<p>Васильково</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img10.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>74,0910 га</span>
+						<p>Васильково 2</p>
+					</div>
+				</div> <!--END карточка территории -->
+				<div class="area__cart"> <!-- карточка территории -->
+					<div class="cart__hdr">
+						<img src="img/area-cart/img11.png" alt="">
+					</div>
+					<div class="cart__txt">
+						<span>5,16 га</span>
+						<p>Городище</p>
+					</div>
+				</div> <!--END карточка территории -->
+			</div>
+		</div>
+	</section><!--END выбрать участок -->
+	<section class="container-wrap advantage-wrap"><!-- преимущества/боли -->
+		<div class="container">
+			<div class="advanage">
+				<h2 class="h2 h2__advantage">Вам будет комфортно с нами!</h2>
+				<div class="adv__disadv">
+					<div class="advantage__dis">
+						<h3 class="h3 h3__adv">При работе с другими компаниями  Вы можете столкнуться:</h3>
+						<ul class="disadv__list">
+							<span></span><li>Завышенной ценой аренды земли и строений</li>
+							<span></span><li>Скрытыми платежами</li>
+							<span></span><li>Отсутствием  развитой транспортной инфраструктуры и  низким качеством дорог</li>
+							<span></span><li>Отсутствием коммуникации</li>
+							<span></span><li>Загрязненная экология</li>
+						</ul>
+					</div>
+					<div class="agvantage__adv">
+						<h3 class="h3">Мы предлагаем:</h3>
+						<ul class="adv__list">
+							<span></span><li>Выгодные условия аренды от собственника</li>
+							<span></span><li>Большой выбор земельных участков и строений</li>
+							<span></span><li>Развитая инфраструктура</li>
+							<span></span><li>Удобное расположение и транспортная доступность</li>
+							<span></span><li>Все коммуникации: электричество, газ, вода</li>
+							<span></span><li>Поддержка отечественного сельхозпроизводителя</li>
+							<span></span><li>Земельные участки в одном из самых экологически чистых   районов Ленинградской</li>
+							<hr>
+							<p>За более подробной информацией обращайтесь по телефонам: </p>
+							<a href="tel:+78125918816"><p class="phone">+7 (812) 591-88-16</p></a>
+							<a href="tel:+79118494975"><p class="phone marginTop">+7 (911) 849-49-75</p></a>
+							<p>Наш специалист поможет Вам  с выбором земельного участка и предложит наиболее выгодные условия заключения договора аренды</p>
+							<div class="adv__slogan">
+								<p>Мы рады видеть Вас снова!</p>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"><!-- линия разделитель с фоном -->
+			<h2 class="h2">Обращаясь к нам, Вы обращаетесь к профессионалам!</h2>
+		</div><!--END линия разделитель с фоном -->
+	</section><!--END преимущества/боли -->
+	<section class="container"><!-- как мы работаем -->
+		<div class="working">
+			<h2 class="h2">Как мы работаем:</h2>
+			<div class="working__block">
+				<div class="block__alg">
+					<div class="alg__img">
+						<img src="img/icon/form.png" alt="">
+					</div>
+					<div class="alg__txt">
+						<p>Заполните форму</p>
+					</div>
+				</div>
+				<span></span>
+				<div class="block__alg">
+					<div class="alg__img">
+						<img src="img/icon/btn.png" alt="">
+					</div>
+					<div class="alg__txt">
+						<p>Нажмите на кнопку "оформить заказ"</p>
+					</div>
+				</div>
+				<span></span>
+				<div class="block__alg">
+					<div class="alg__img">
+						<img src="img/icon/call.png" alt="">
+					</div>
+					<div class="alg__txt">
+						<p>Наш специалист позвонит Вам, чтобы уточнить детали</p>
+					</div>
+				</div>
+				<span></span>
+				<div class="block__alg">
+					<div class="alg__img">
+						<img src="img/icon/wrighting.png" alt="">
+					</div>
+					<div class="alg__txt">
+						<p>Мы подписываем договор аренды</p>
+					</div>
+				</div>
+				<span></span>
+				<div class="block__alg">
+					<div class="alg__img">
+						<img src="img/icon/chel.png" alt="">
+					</div>
+					<div class="alg__txt">
+						<p>Вы получаете готовый продукт</p>
+					</div>
+				</div>
+			</div>
+
+			<form class="form form__work" id="formConsult">
+				<input type="text" name="user_phone" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" placeholder="+79990000000" required>
+				<input type="text" name="user_name" pattern="[^0-9]{3,}" placeholder="Иванов Иван Иванович" required>
+				<input class="btn" type="submit" value="Получить консультацию!">
+			</form>
+
+		</div>
+	</section><!--END как мы работаем -->
+	<section class="container-wrap advantage-wrap"><!-- контакты -->
+		<div class="container">
+			<div class="contact-wrap">
+				<h2 class="h2 h2__advantage">Контакты</h2>
+				<div class="contact">
+					<div class="contact__txt">
+						<div class="h3">ООО "Горизонт"</div>
+
+						<div class="txt__info">
+							<p>187310, Россия, Ленинградская область, Кировский район, Васильково, 19-Б</p>
+							<a href="tel:+78125918816"><p class="phone">+7 (812) 591-88-16</p></a>
+							<a href="tel:+79118494975"><p class="phone">+7 (911) 849-49-75</p></a>
+							<p>E-mail: <a href="mailto:121@fgr.ru">121@fgr.ru</a></p>
+						</div>
+					</div>
+					<div class="contact__map">
+						<img src="img/map.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line line__contact line__footer"><!-- линия разделитель с фоном -->
+		
+		</div><!--END линия разделитель с фоном -->
+	</section><!--END контакты -->
+
+<!-- модальные окна	 Вальтеровский ручей-->
+<div class="modal-back"></div>
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Вальтеровский ручей</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Valtercreek.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>114,8259</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Вальтеровский ручей 1 общей S = 114,8259 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство.</p><p>Использование под сенокос - 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="valter">
+			<input class="modal-input" name="user_phone" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Вальтеровский ручей</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Вальтеровский ручей 2-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Вальтеровский ручей 2</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Valtercreek2.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>84,0505</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Вальтеровский ручей 2 общей S = 84,0505 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос — 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="valterTwo">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Вальтеровский ручей 2</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Большое Троицкое-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Большое Троицкое</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/bigtroi.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>255,7125</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Большое Троицкое общей S = 255,7125 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос- 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="bigTroickoe">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Большое Троицкое</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	Малое Троицкое-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Малое Троицкое</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/smalltroi.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>61,4183</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Малое Троицкое общей S = 61,4183 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос - 500 руб. га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="troickoe">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Малое Троицкое</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Подолье-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Подолье</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Podol.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>148,58</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Подолье общей S = 148,58 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос - 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="podolie">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Подолье</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Подолье 2-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Подолье 2</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/podol2.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>4,54</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Подолье 2 общей S = 4,54 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения крестьянского (фермерского) хозяйства смешаного напраления. Участок находится в первой линии территории, прилегающей к шоссе. </p><p>
+
+			Подходит под пашню, сенокос, с/х производство, а также идеально подходит под логистические цели и цели дорожной инфраструктуры. Использование под сенокос- 500 руб.га в сезон. </p><p>
+
+			При необходимости, возможен перевод в другую категорию земель.</p>
+		</div>
+		<form class="form modal__form" id="podolieTwo">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Подолье 2</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Мучихино-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Мучихино</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Mychihino.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Мучихино, раб. участок 3Сул</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>21,4715</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Мучихино 1 общей S = 21,4715 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос - 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="muchihino">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Мучихино</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Мучихино 2-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Мучихино 2</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Mychihino2.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Мучихино, раб. участок 4Сул</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>59,0755</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Мучихино 2 общей S = 59,0755 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос - 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="muchihinoTwo">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Мучихино 2</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Васильково-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Васильково</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Vasilkovo.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>5,0476</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">+
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Мучихино 1 общей S = 5, 0476 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. </p><p>Подходит под пашню, сенокос, с/х-производство.</p>
+		</div>
+		<form class="form modal__form" id="vasilkovo">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Васильково</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Васильково 2-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Васильково 2</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Bottomvasil.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>74,0910</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Нижнее Васильково общей S = 74,0910 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос - 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="vasilkovoTwo">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Васильково 2</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+<!-- модальные окна	 Городище-->
+<div class="modal-wrap">
+	<div class="modal-back-close"></div>
+	<div class="modal">
+		<div class="modal__hdr">
+			<h3 class="h3">Городище</h3>
+			<img class="close" src="img/icon/close.png" alt="">
+		</div>
+		<div class="modal-content-wrap">
+			<div class="modal-content__img">
+				<img src="img/objects/Gorodishe.jpg" alt="">
+				
+			</div>
+			<div class="modal-content__txt">
+				<h4 class="h4">Адрес объекта:</h4>
+				<p>Ленинградская область, Кировский район, 74 км от Санкт-Петербурга по Мурманскому шоссе, в близи дер. Васильково</p>
+				<h4 class="h4">Назначение объекта:</h4>
+				<p>Любые цели</p>
+				<h4 class="h4">Общая площадь объекта:</h4>
+				<p>5,16</p>
+				<h4 class="h4">Цена:</h4>
+				<p>3 500 руб.</p>
+			</div>
+		</div>
+		<div class="modal-content">
+			<h4 class="h4">Описание:</h4>
+			<p>Земельный участок — Городище общей S = 5,16 га. Сдаётся в аренду от 1 га. Категория земель: земли сельскохозяйственного назначения, разрешённое использование: для ведения сельскохозяйственного производства. Подходит под пашню, сенокос, с/х-производство. </p><p> Использование под сенокос - 500 руб.га в сезон.</p>
+		</div>
+		<form class="form modal__form" id="gorodishe">
+			<input class="modal-input" pattern="[+]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}[-]{0,1}[0-9]{0,15}" name="user_phone" type="text" placeholder="+79990000000" required>
+			<input class="modal-input" pattern="[^0-9]{3,}" name="user_name" type="text" placeholder="Иванов Иван Иванович" required>
+			<textarea name="titleProduct" id="" cols="30" rows="10">Городище</textarea>
+			<input class="btn modal-btn" type="submit" value="Получить консультацию!">
+		</form>
+	</div>
+</div>
+<!--END модальные окна	 -->
+
+	<!-- скрипты  -->
+	<script src="js/jq.js"></script>
+	<script src="js/main.js"></script>
+	
+	<!--END скрипты  -->
+</body>
+</html>

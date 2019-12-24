@@ -1,0 +1,656 @@
+@hdr-back: rgba(6,33,112,0.6); //цвет фона шапки
+@white: #FFFFFF;//белый цвет
+@black-opacity:rgba(0,0,0, 0.5);//цвет заливки первого экрана
+@back-utp-form:rgba(255,255,255,0.7);//цвет фона формы утп (первый экран)
+@btn-back:linear-gradient(to top, #496cd6, #6783d6);//фон кнопки
+@btn-back-hover:linear-gradient(to top, #4D77F9, #9BB3FB);//фон кнопки hover
+@timer:rgba(6,33,112,0.8); //цвет фона для цифр
+@border-inpt:#ADADAD;//цвет границы формы
+@advanage-back:#476bd6;//цвет заднего фона блока с преимуществами
+@advantage-cart:linear-gradient(to bottom, #012799, rgba(255,255,255, 0));
+@modal-back:rgba(0,0,0, 0.7); //цвет заднего фона для модалки
+
+
+@font-face {
+    font-family: rob;
+    src: url(../fonts/Roboto-Regular.ttf); 
+   }
+
+@font-face {
+    font-family: RobSl; 
+    src: url(../fonts/RobotoSlab-Regular.ttf); 
+   }
+
+
+p, span, li, .h4 {
+	font-family: rob, sans-serif;
+}
+
+b {
+	font-weight: 600;
+	font-style:italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+.h1, .h2, .h3 {
+	font-family: RobSl, sans-serif;
+}
+
+.h1 {
+	color: @white;
+	font-size: 44px;
+	font-weight: 600;
+}
+
+.h1__utp {
+	margin-bottom: 55px;
+	margin-top: 30px;
+}
+
+
+.h2 {
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+}
+
+.h3 {
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.h4 {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.container-wrap {
+	width: 100%;
+}
+
+.container {
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+
+// шапка
+
+.hdr-back {
+	width: 100%;
+	background: @hdr-back;
+	position:absolute;
+}
+
+.hdr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+
+	span {
+		color: @white;
+	}
+}
+
+.hdr__company, .hdr__phone {
+	span {
+		font-size: 36px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+
+.hdr__email {
+	span {
+		font-size: 32px;
+		font-weight: 600;
+	}
+}
+
+//END шапка
+
+// блок 1
+.block-one {
+	background-blend-mode: multiply;
+	background-image: url(../img/min-back2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	// background-color: @black-opacity;
+	min-height: 500px;
+}
+
+.block-utp {
+	display: flex;
+	flex-direction: column;
+	min-height: 500px;
+	padding-top: 60px;
+}
+
+.block-utp__advantage {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	li {
+		color: @white;
+		margin: 10px 0;
+		font-size: 23px;
+	}
+}
+
+.block-utp__form {
+	margin: 10px 0;
+	width: 30%;
+}
+
+.utp-form__content {
+	display: flex;
+	flex-direction: column;
+	background: @back-utp-form;
+	padding: 10px;
+	border-radius:5px;
+
+	input {
+		margin: 5px 0;
+		padding: 10px 10px;
+		border-radius:5px;
+		border-radius: 5px;
+		border:none;
+	}
+}
+
+#utpForm {
+	input {
+		width: 100%;
+	}
+}
+
+.btn {
+	cursor:pointer;
+	background:@btn-back;
+	color:@white;
+	font-weight: 600;
+	font-size: 18px;
+	transition: 0.32s;
+
+	&:hover {
+		background:@btn-back-hover;
+	}
+}
+
+.hdr-form {
+	margin-bottom: 10px;
+}
+
+//END блок 1
+
+// блок 2
+
+.block {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0;
+}
+
+.block-two {
+	height: 50%;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	min-height: 350px;
+}
+
+.block-two__txt {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	span {
+		font-weight: 600;
+		margin: 20px 0;
+		font-size: 30px;
+	}
+}
+
+.block-two__time {
+	display: flex;
+	margin: 15px 0;
+}
+
+.time__days, .time__hours, .time__min, .time__sec {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: @timer;
+	border-radius: 5px;
+	padding: 25px 10px;
+
+	span {
+		font-size: 28px;
+		font-weight: 600;
+		color: @white;
+	}
+}
+
+.dots-timer {
+	margin: 0 10px;
+	font-weight: 600;
+	font-size: 26px;
+	height: 100%;
+	padding-top: 24px;
+}
+
+.time__wrap {
+	p {
+		font-size: 9px;
+		text-align: center;
+		margin: 5px 0;
+	}
+}
+//END блок 2
+
+// форма обратной связи
+
+.form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	input {
+		width: 32%;
+		margin: 5px 0;
+		padding: 5px 5px;
+		border-radius:5px;
+		border-radius: 5px;
+		border: 1px solid @border-inpt;
+		height: 30px;
+	}
+}
+
+//END форма обратной связи
+
+// блок 3 - выбрать участок
+.select-area {
+	.h2 {
+		margin-bottom: 20px;
+	}
+}
+
+.area {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.area__cart {
+	width: 23%;
+	height: auto;
+	flex-grow: 1;
+	padding: 20px;
+	margin: 10px 0;
+	cursor:pointer;
+}
+
+.cart__hdr {
+	img {
+		width: 100%;
+	}
+}
+
+.cart__txt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	p {
+		font-weight: 600;
+		cursor: pointer;
+		border-bottom: 1px dashed black;
+		border-bottom-width: 2px;
+
+		&:hover {
+			color: @timer;
+			border-bottom-color: @timer;
+		}
+	}
+}
+//END блок 3 - выбрать участок
+
+// преимущества
+.advantage-wrap	{
+	background:@advanage-back;
+}
+
+.advanage {
+	padding: 60px 0;
+}
+
+.h2__advantage {
+	color:@white;
+	margin-bottom: 60px;
+}
+
+.adv__disadv {
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantage__dis, .agvantage__adv {
+	background:@advantage-cart;
+	border-radius: 5px;
+	padding: 25px;
+	width: 48%;
+
+	.h3 {
+		color: @white;
+	}
+}
+
+.disadv__list, .adv__list {
+	margin: 20px 0;
+	li {
+		color: @white;
+		margin: 10px 0;
+		margin-left: 45px;
+		line-height:1.5;
+	}
+
+	span {
+		width: 35px;
+		height: 35px;
+		float: left;
+	}
+
+	p {
+		color: @white;
+		margin-bottom: 10px;
+	}
+}
+
+.disadv__list {
+	span {
+		content:url(../img/icon/loose.png);
+	    margin-top: -3px;
+	}	
+}
+
+.adv__list {
+	span {
+		content:url(../img/icon/ok.png);
+		margin-top: -10px;
+	}	
+
+	.marginTop {
+		margin-top: 10px;
+	}
+}
+
+.adv__slogan {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	margin: 40px 0;
+
+	p {
+		color: @white;
+		font-size: 22px;
+		font-style: italic;
+	}
+}
+//END преимущества
+
+// линия разделитель
+
+.line {
+	background: url(../img/line.png) repeat;
+	width: 100%;
+	height:450px;
+	margin-top: -172px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	.h2 {
+		color: @white;
+		margin-bottom: 50px;
+		font-family: rob;
+		font-style: italic;
+	}
+}
+
+
+//END линия разделитель
+
+// как мы работаем
+
+.working {
+	padding: 50px 0;
+
+	.h2 {
+		margin-bottom: 50px;
+	}
+}
+
+.working__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+	span {
+		content: url(../img/icon/arrow.png);
+		margin-top: -35px;
+	}
+}
+
+.alg__txt {
+	p {
+		text-align: center;
+	}
+}
+
+.block__alg {
+	width: 200px;
+	height: auto;
+	padding: 10px;
+	height: 240px;
+}
+
+.alg__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+
+	img {
+		width: 100%;
+	}
+}
+
+.form__work {
+	margin-top:80px;
+}
+//END как мы работаем
+
+// блок контакты
+.contact-wrap {
+	padding: 40px;
+}
+
+.txt__info,  .contact__map {
+	width: 48%;
+
+	a {
+		color: @white;
+	}
+}
+
+.contact__map {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.contact {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+
+	.h3 {
+		color: @white;
+	}
+
+	p {
+		color: @white;
+
+	}
+
+	b {
+		font-style: normal;
+	}
+}
+
+.phone {
+	font-weight: 600;
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+.contact__txt {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 2px;
+
+	p {
+		margin-top: 15px;
+	}
+
+	.h3 {
+		font-family: rob;
+		font-weight: 600;
+		font-size: 28px;
+	}
+}
+
+.line__contact {
+	height: 390px;
+	margin-top: -150px;
+}
+//END блок контакты
+
+// модальные окна
+.modal-wrap {
+	display: flex;
+	justify-content: center;
+	position:fixed;
+	overflow: auto;
+	overflow-y: scroll;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display:none;
+
+}
+
+.modal-back {
+	position: fixed;
+	background:@modal-back;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.modal {
+	background: @white;
+	border-radius: 5px;
+	max-width: 700px;
+	min-width: 320px;
+	width: 95%;
+	padding: 10px;
+	display: block;
+	position: relative;
+	margin: 20px auto;
+}
+
+.modal-back-close {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	display:none;
+}
+
+.modal-content-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-content__img, .modal-content__txt {
+	width: 49%;
+}
+
+.modal-content__img {
+	img {
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+	}
+}
+
+.modal-content__txt, .modal-content {
+	p {
+		margin: 5px 0; 
+		line-height: 1.3;
+	}
+}
+
+.modal__form {
+	.btn {
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	textarea {
+		display:none;
+	}
+
+	.title-prod {
+		display:none;
+	}
+}
+
+.close {
+	width: 25px;
+	height: 25px;
+	cursor:pointer;
+	transition: 0.5s;
+
+	&:hover {
+		transform:rotate(180deg);
+	}
+}
+
+.modal__hdr {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+//END модальные окна
